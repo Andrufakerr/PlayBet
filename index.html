@@ -1,20 +1,52 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <!-- Configuración para la vista previa en WhatsApp -->
-    <meta property="og:title" content="¡Chatea con nosotros!" />
-    <meta property="og:description" content="Aprieta el link para chatear con nosotros en WhatsApp." />
-    <meta property="og:image" content="imagen/Lobo.png" />
-    <meta property="og:url" content="https://tu-dominio.com" />
-    <meta property="og:type" content="website" />
-    
-    <!-- Redirección automática a los 0 segundos -->
-    <meta http-equiv="refresh" content="0; url=https://wa.me/543804628207" />
-    
-    <title>Redirigiendo a WhatsApp...</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Chatea con nosotros en WhatsApp</title>
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="¡Chatea con nosotros!" />
+  <meta property="og:description" content="Aprieta el link para chatear con nosotros en WhatsApp." />
+  <meta property="og:image" content="https://andrufakerr.github.io/PlayBet/imagen/Lobo.png" />
+  <meta property="og:url" content="https://andrufakerr.github.io/PlayBet/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_ES" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="¡Chatea con nosotros!" />
+  <meta name="twitter:description" content="Aprieta el link para chatear con nosotros en WhatsApp." />
+  <meta name="twitter:image" content="https://andrufakerr.github.io/PlayBet/imagen/Lobo.png" />
+
+  <style>
+    body{font-family:Arial,Helvetica,sans-serif;background:#071029;color:#e6eef8;margin:0}
+    .wrap{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px}
+    .card{background:rgba(255,255,255,0.03);padding:28px;border-radius:12px;text-align:center;max-width:720px}
+    .btn{background:#25D366;color:#042017;padding:12px 18px;border-radius:10px;text-decoration:none;font-weight:700}
+  </style>
+
+  <script>
+    // Retraso para permitir que el bot lea las meta tags (3 segundos)
+    window.addEventListener('load', function(){
+      setTimeout(function(){
+        window.location.href = "https://wa.me/543804628207";
+      }, 3000);
+    });
+  </script>
 </head>
 <body>
-    <p>Si no eres redirigido automáticamente, <a href="https://wa.me/543804628207">haz clic aquí para chatear</a>.</p>
+  <div class="wrap">
+    <div class="card" role="main">
+      <img src="https://andrufakerr.github.io/PlayBet/imagen/logo_whatsapp.jpg" alt="Logo" style="max-width:160px;border-radius:8px;margin-bottom:16px" />
+      <h1>¡Chatea con nosotros!</h1>
+      <p>Serás redirigido en unos segundos. Si no, pulsa el botón.</p>
+      <a class="btn" href="https://wa.me/543804628207" target="_blank" rel="noopener noreferrer">Abrir chat en WhatsApp</a>
+      <p style="margin-top:12px;color:#9fb6d6;font-size:0.9rem">Enlace directo: <a href="https://wa.me/543804628207" style="color:#cfeef0">https://wa.me/543804628207</a></p>
+    </div>
+  </div>
+
+  <noscript>
+    <p style="text-align:center;margin-top:20px">Activa JavaScript o pulsa <a href="https://wa.me/543804628207">aquí</a> para chatear.</p>
+  </noscript>
 </body>
 </html>
